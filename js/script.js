@@ -1,9 +1,14 @@
 'use strict'
 
-let userName = prompt('What is your name?');
+let userName = prompt('Please, enter your name!');
+let userAnswer;
 
-if (userName === null || userName === ""  ) {
-    alert("You have not entered your name.");
+if (userName){
+    userAnswer = confirm(`${userName }! Do you want to see the greeting?`)
 } else {
-    alert(`Hello, ${userName}! How are you?`);
+    userAnswer = confirm(`Do you want to see the greeting?`)
+}
+
+if (userAnswer){
+    alert(`Welcome! ${userAnswer}!`)
 }
