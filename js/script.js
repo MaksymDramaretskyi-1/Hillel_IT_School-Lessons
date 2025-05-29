@@ -18,7 +18,7 @@ const registrationDate = "2024-05-28";
 
 /* This program assumes that the user's card number will not change, so a const is used.
 This variable stores the user's card number. */
-const userCardNumber = 5433345567859898n;
+const userCardNumber = 5433_3455_6785_9898n;
 
 /* This variable does not have a value now, but it may appear in the future.
  That is why the variable is declared here through the let */
@@ -33,7 +33,7 @@ so the variable is declared with let */
 let userBonusAccount =  789;
 
 // Console output
-console.log(`User ${userName}: Age ${userAges} years. Has bonuses ${userBonusAccount}`);
+console.log(`User ${userName}: Age ${userAge} years. Has bonuses ${userBonusAccount}`);
 
 // || will work if the left value is "false" (false, 0, empty string, null, undefined, NaN).
 console.log(`Verification: ${isUserVerification}. Promo code: ${userPromoCode || "none"}`);
