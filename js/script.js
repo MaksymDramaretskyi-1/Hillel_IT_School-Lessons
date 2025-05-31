@@ -33,10 +33,10 @@ console.log(`Login-type:  ${typeof(objectSession.lastLogin)}`);
 
 console.log(`NickName-type:  ${typeof(objectSession.nickname)}`);
 
-console.log(`favoriteTech-type:  ${typeof(objectSession.favoriteTech)}`);
+console.log(`FavoriteTech-type:  ${typeof(objectSession.favoriteTech)}`);
 
-console.log(`settings-type:  ${typeof(objectSession.settings)}`);
+console.log(`Settings-type:  ${typeof(objectSession.settings)}`);
 
-console.log(`settings.theme-type:  ${typeof(objectSession.settings.theme)}`);
+console.log(`Settings.theme-type:  ${typeof(objectSession.settings.theme)}`);
 
-console.log(`settings.autoLogin-type:  ${typeof(objectSession.settings.autoLogin)}`);
+console.log(`Settings.autoLogin-type:  ${typeof(objectSession.settings.autoLogin)}`);
