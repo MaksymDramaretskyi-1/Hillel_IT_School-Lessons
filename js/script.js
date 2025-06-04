@@ -9,4 +9,4 @@ const enterThirdNumber = +prompt('Write the Third number');
 const sum = enterFirstNumber + enterSecondNumber + enterThirdNumber;
 const result = sum / 3;
 
-alert(`${result} -  Number of seconds`);
+alert(`${result} -  Arithmetic mean of the three numbers`);
