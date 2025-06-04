@@ -1,8 +1,12 @@
 'use strict'
 
-const userEnterHours = +prompt('Write the number of hours');
+// Get three numbers from the user (use + to round to a number)
+const enterFirstNumber = +prompt('Write the First number');
+const enterSecondNumber = +prompt('Write the Second number');
+const enterThirdNumber = +prompt('Write the Third number');
 
-const secondsInHour = 3600;
-const count = userEnterHours * secondsInHour;
+// Calculate the sum and arithmetic mean
+const sum = enterFirstNumber + enterSecondNumber + enterThirdNumber;
+const result = sum / 3;
 
-alert(`${count} -  Number of seconds`);
+alert(`${result} -  Number of seconds`);
