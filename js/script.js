@@ -6,7 +6,10 @@ const enterSecondNumber = +prompt('Write the Second number');
 const enterThirdNumber = +prompt('Write the Third number');
 
 // Calculate the sum and arithmetic mean
-const sum = enterFirstNumber + enterSecondNumber + enterThirdNumber;
-const result = sum / 3;
+let sum = enterFirstNumber + enterSecondNumber + enterThirdNumber;
+//const result = sum / 3;
 
-alert(`${result} -  Arithmetic mean of the three numbers`);
+//you can do it this way, but i think it would be wiser to use a separate constant variable for storing
+sum /= 3;
+
+alert(`${sum} -  Arithmetic mean of the three numbers`);
