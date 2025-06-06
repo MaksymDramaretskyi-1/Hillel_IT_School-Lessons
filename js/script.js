@@ -4,7 +4,7 @@ const userEnterBirthday = prompt("Enter your birthday");
 const userEnterCity = prompt("Enter your city");
 const userEnterFavSport = prompt("Enter your favorite sport");
 
-let currentYearValue = 2025;
+const currentYearValue = 2025;
 let userCountryValue = null;
 let userFavSportValue = null;
 let userValueCount = null
