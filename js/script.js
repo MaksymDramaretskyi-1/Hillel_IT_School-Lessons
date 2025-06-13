@@ -4,10 +4,9 @@ const userEnterValue = +prompt("Enter value");
 
 const characters = 'abcdefghijklmnopqrstuvwxyz0123456789:';
 
-const generateKey = (length, characters)=> {
+const generateKey = (length, characters) => {
 
   let resultRandom = '';
-
   const charactersLength = characters.length;
 
   for (let i = 0; i < length; i++) {
@@ -16,10 +15,8 @@ const generateKey = (length, characters)=> {
     //Add a random symbol
     resultRandom += characters[randomIndexCharacters];
   }
-
   return resultRandom;
 }
-
 
 const key = generateKey(userEnterValue, characters);
 console.log(key);
