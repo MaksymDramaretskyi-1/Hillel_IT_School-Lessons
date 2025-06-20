@@ -1,49 +1,32 @@
 'use strict'
 
+const arr = [1, 2, 3, -1, -2, -3];
 
-function padString(str, length, char, left = false) {
+function filterNumbers(inputArray) {
 
-  if (typeof str !== 'string') {
-    return 'Error: the first argument must be a string';
+  if (inputArray.length === 0) {
+    return "Input array is empty";
   }
 
-  if (typeof length !== 'number') {
-    return 'Error: the second argument must be a number';
+  const newArr = [];
+
+  for (let i = 0; i < inputArray.length; i++) {
+    const currentNumber = inputArray[i];
+
+    if (currentNumber > 0) {
+      newArr.push(currentNumber);
+    }
   }
 
-  if (char === undefined) {
-    return 'Error: the third argument (character) is missing';
+  if (newArr.length > 0) {
+    return newArr;
+  } else {
+    return null;
   }
-
-  if (typeof char !== 'string' || char.length !== 1) {
-    return 'Error: the third argument must be a string of exactly 1 character';
-  }
-
-  if (typeof left !== 'boolean' && left !== undefined) {
-    return 'Error: the fourth argument must be a boolean (true or false)';
-  }
-
-  // If the desired length is shorter than the string, truncate
-  if (length < str.length) {
-    const result = str.substr(0, length);
-    console.log(result);
-    return result;
-  }
-
-  // Calculate how many characters to add
-  const padLength = length - str.length;
-  const padding = char.repeat(padLength);
-  const result = left ? padding + str : str + padding;
-
-  console.log(result);
-  return result;
 }
 
-// Test examples
-padString('hello', 8, '*');               // hello***
-padString('hello', 6, '*', false);   // *hello
-padString('hello', 2);                         // he
-padString('test', 'wrong', '*');         // Error: the second argument must be a number
-padString(123, 5, '*');                  // Error: the first argument must be a string
-padString('hi', 5);                           // Error: the third argument (character) is missing
-padString('hi', 5, 'pdt');              // Error: the third argument must be a string of exactly 1 character
+console.log(filterNumbers(arr));
+
+
+
+
