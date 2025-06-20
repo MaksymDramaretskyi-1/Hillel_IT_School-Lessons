@@ -1,32 +1,14 @@
 'use strict'
 
-const arr = [1, 2, 3, -1, -2, -3];
+const array = [1, 2, 3, 4, 5, 6, 7];
 
-function filterNumbers(inputArray) {
-
-  if (inputArray.length === 0) {
-    return "Input array is empty";
-  }
-
-  const newArr = [];
-
-  for (let i = 0; i < inputArray.length; i++) {
-    const currentNumber = inputArray[i];
-
-    if (currentNumber > 0) {
-      newArr.push(currentNumber);
-    }
-  }
-
-  if (newArr.length > 0) {
-    return newArr;
-  } else {
-    return null;
+function removeElement(array, item) {
+  const index = array.indexOf(item);
+  if (index !== -1) {
+    array.splice(index, 1);
   }
 }
 
-console.log(filterNumbers(arr));
 
-
-
-
+removeElement(array, 3);
+console.log(array);
